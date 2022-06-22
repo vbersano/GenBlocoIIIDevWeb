@@ -1,0 +1,141 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    align-content: center;
+}
+
+header {
+    height: 10vh;
+    width: 100%;
+    background-color: #c02026; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0px; 
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li{
+    color: white;
+    list-style-type: none;
+    cursor: pointer;
+    padding-right: 2rem;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+li:hover{
+    color: grey;
+}
+
+.imgtoleft{
+    float: left;
+    margin-right: 10px;
+}
+
+.imgtoright{
+    float: right;
+    margin-left: 10px;
+}
+
+.imgtocenter{
+    display: block;
+    margin: auto;
+}
+
+.logo{
+    padding-left: 10px;
+    width: 100px;
+    float: left;
+
+}
+
+.menu{
+    float: left;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.container {
+    align-items: center;
+    margin: 50px;
+}
+
+.contactform {
+    align-items: center;
+    margin: 50px;
+    background-color: gray ;
+    width: 23%;
+    padding-top: 1px;
+
+    /*https://i.imgur.com/NIaWOIl.png*/
+}
+
+h1 {
+    color: #c02026 ;
+}
+
+h2 {
+    color: #c02026 ;
+}
+
+input[type="text"], textarea {
+
+    border-color: crimson;
+    background-color :#3c0d0e ; 
+  
+}
+
+input[type="email"], textarea {
+
+    border-color: crimson;
+    background-color :#3c0d0e ; 
+  
+}
+
+.brandofsacrifice{
+    height: 50px;
+}
+
+.wrapper {
+    height: 70px;
+    width: 700px;
+    display: flex;
+    align-items: flex-end;
+}
+
+label {
+    color: white ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+p{
+    color: white;
+    text-align: justify;
+}
+
+footer{
+    color: white;
+    font-size:xx-small;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+}

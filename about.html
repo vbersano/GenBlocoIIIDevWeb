@@ -1,102 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body style="background-color:black; align-content: center;">
 
-    <header style=
-    "height: 10vh;
-    width: 100%;
-    background-color: #c02026; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0; 
-    margin: 0px;">
+    <header>
 
         <div>
-            <a href="home.html"> <img src="https://i.imgur.com/NjniWaD.png" alt="berserk anime logo " height=50
-                px style="float: left; margin-left: 15px; margin-top: 5px; margin-bottom: 5px;"></a>
+            <a href="home.html"><img src="https://i.imgur.com/NjniWaD.png" alt="logo" class="logo"></a>
         </div>
 
         <ul style="color: #c02026;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
         list-style: none;
         display: flex;">
-            
-                <li style="color: white; list-style-type: none; cursor: pointer; padding-right: 2rem; border-radius: 10px; margin: 10px;">
-                    <a href="guts.html">Guts</a>
-                </li>
 
-                <li style="color: white; list-style-type: none; cursor: pointer; padding-right: 2rem; border-radius: 10px; margin: 10px;">
-                    <a href="guts.html">Griffith</a>
-                </li>
+            <li>
+                <a href="guts.html">Guts</a>
+            </li>
 
-                <li style="color: white; list-style-type: none; cursor: pointer; padding-right: 2rem; border-radius: 10px; margin: 10px;">
-                    <a href="guts.html">Casca</a>
-                </li>
+            <li>
+                <a href="guts.html">Griffith</a>
+            </li>
 
-                <li style="color: white; list-style-type: none; cursor: pointer; padding-right: 2rem; border-radius: 10px; margin: 10px;">
-                    <a href="plot.html">Plot</a>
-                </li>
+            <li>
+                <a href="guts.html">Casca</a>
+            </li>
 
-                <li style="color: white; list-style-type: none; cursor: pointer; padding-right: 2rem; border-radius: 10px; margin: 10px;">
-                    <a href="about.html" target="_blank">About Us</a>
-                </li>
+            <li>
+                <a href="plot.html">Plot</a>
+            </li>
+
+            <li>
+                <a href="about.html">About Us</a>
+            </li>
         </ul>
     </header>
 
-    <div align=center; style="margin: 50px;">
-        <h1 style="color: #c02026 ; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">About Us</h1>
+    <div class="container">
+        <h1>About Us</h1>
 
-        <p style="color: white; text-align: justify; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-            This website was created as an Assignment for the first day of Front End Web Development at Generation Brasil, Class n°53, Java Fullstack Web Development. I'm a big Berserk fan and a mini wiki about it was the first thing that came to mind when coding a website. This website was coded using HTML only, and nothing else, it was a little challange I've set for myself in this assignment. Hope you've liked it.
+        <p>
+            This website was created as an Assignment for the first day of Front End Web Development at Generation
+            Brasil, Class n°53, Java Fullstack Web Development. I'm a big Berserk fan and a mini wiki about it was the
+            first thing that came to mind when coding a Webpage. This website was coded using HTML and CSS only, and
+            nothing
+            else. Hope you've liked it.
         </p>
     </div>
 
-
     <center>
-    <div  style="float: center; margin-left: 15px; margin-top: 5px; margin-bottom: 60px; ">
+        <div class="contactform">
 
-        <ul style="color: #c02026;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-        list-style: none">
-            <li  style="font-size:x-large; font-weight: bold;">Contact Info:</li>
-            <li  style="font-size:x-large"><a href="https://Github.com/vbersano" target="_blank">github</a></li>
-            <li style="font-size:x-large"><a href="https://www.linkedin.com/in/vinicius-bersano/" target="_blank">LinkedIn</a></li>
-        </ul>
-    </div>
+            <div class="container">
 
-    <h2 style="color: #c02026 ; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Mande um e-mail !</h2>
-    <div style="float: center; margin-left: 15px; margin-top: 5px; margin-bottom: 60px; ">
-        
-        <form>
-            <label for = "nome" style="color: white ; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Nome:</label> <br>
-            <input type="text" id="nome">
-            
-            <br><label for = "E-mail" style="color: white ; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">E-mail:</label> <br>
-            <input type="email" id="E-mail">
-            
-            <br><label for = "assunto" style="color: white ; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Texto:</label> <br>
-            <textarea name="assunto" id="assunto" cols="21" rows="5"></textarea>
+                <h2>Contact Info !</h2>
 
-        </form>
-    </div>
+                <ul>
+
+                    <li style="font-size:x-large"><a href="https://Github.com/vbersano" target="_blank">github</a></li>
+                    <li style="font-size:x-large"><a href="https://www.linkedin.com/in/vinicius-bersano/"
+                            target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div class="container">
+
+                <h2>Send us an e-mail !</h2>
+
+                <form>
+                    <label for="nome">Name:</label> <br>
+                    <input type="text" id="nome">
+
+                    <br><label for="E-mail">E-mail:</label> <br>
+                    <input type="email" id="E-mail">
+
+                    <br><label for="Subject">Subject:</label> <br>
+                    <input type="text" id="Subject">
+
+                    <br><label for="assunto">Text:</label> <br>
+                    <textarea name="assunto" id="assunto" cols="22" rows="5"></textarea>
+
+                </form>
+
+                <div class="wrapper">
+                    <img src="https://i.imgur.com/NIaWOIl.png" alt="brand of sacrifice" class="brandofsacrifice">
+                </div>
+
+            </div>
 
 
-    <div align="center">
-        <hr>
-        <footer style="color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size:xx-small;">
-            <p>Webpage developed for a Generation Brasil - Java Web Course assignment!</p>
-            <p>Coded and Developed by Vinicius Bersano Oliveira</p>
-            <p>no Copyright, for an Open-Source World!</p>
-        </footer>
-        </hr>
-    </div>
-    
+        </center>
+
+        <div class="container">
+                <hr>
+                <footer>
+                    <h3>Webpage developed for a Generation Brasil - Java Web Course assignment!</h3>
+                    <h3>Coded and Developed by Vinicius Bersano Oliveira</h3>
+                    <h3>no Copyright, for a Copyright free World!</h3>
+                </footer>
+                </hr>
+            </div>
+
+        </div>
+
 </body>
+
 </html>
