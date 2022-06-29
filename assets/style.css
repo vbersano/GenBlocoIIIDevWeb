@@ -24,20 +24,23 @@ a {
     text-decoration: none;
 }
 
-ul {
+#menu ul {
     list-style-type: none;
+    list-style: none;
+    display: flex;
 }
 
-li{
+#menu li{
     color: white;
     list-style-type: none;
     cursor: pointer;
     padding-right: 2rem;
     border-radius: 10px;
     margin: 10px;
+    display: inline;
 }
 
-li:hover{
+#menu li:hover{
     color: grey;
 }
 
@@ -64,7 +67,7 @@ li:hover{
 }
 
 .menu{
-    float: left;
+    flex-flow: left;
     margin-left: 15px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -73,16 +76,22 @@ li:hover{
 .container {
     align-items: center;
     margin: 50px;
+    justify-content: center;
 }
 
 .contactform {
     align-items: center;
     margin: 50px;
     background-color: gray ;
-    width: 23%;
+    width: 24%;
     padding-top: 1px;
 
     /*https://i.imgur.com/NIaWOIl.png*/
+}
+
+.tm-social {
+    height: 30px;
+    padding: 2px;
 }
 
 h1 {
@@ -109,6 +118,13 @@ input[type="email"], textarea {
 
 .brandofsacrifice{
     height: 50px;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 200px;
+    width: 200px;
 }
 
 .wrapper {

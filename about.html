@@ -17,10 +17,7 @@
             <a href="home.html"><img src="https://i.imgur.com/NjniWaD.png" alt="logo" class="logo"></a>
         </div>
 
-        <ul style="color: #c02026;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-        list-style: none;
-        display: flex;">
+        <ul id="menu">
 
             <li>
                 <a href="guts.html">Guts</a>
@@ -50,9 +47,7 @@
         <p>
             This website was created as an Assignment for the first day of Front End Web Development at Generation
             Brasil, Class n°53, Java Fullstack Web Development. I'm a big Berserk fan and a mini wiki about it was the
-            first thing that came to mind when coding a Webpage. This website was coded using HTML and CSS only, and
-            nothing
-            else. Hope you've liked it.
+            first thing that came to mind when coding a Webpage. This website was coded using HTML, CSS, and JavaScript. Hope you've liked it.
         </p>
     </div>
 
@@ -61,55 +56,64 @@
 
             <div class="container">
 
-                <h2>Contact Info !</h2>
-
-                <ul>
-
-                    <li style="font-size:x-large"><a href="https://Github.com/vbersano" target="_blank">github</a></li>
-                    <li style="font-size:x-large"><a href="https://www.linkedin.com/in/vinicius-bersano/"
-                            target="_blank">LinkedIn</a></li>
-                </ul>
-            </div>
-
-            <div class="container">
-
                 <h2>Send us an e-mail !</h2>
 
                 <form>
                     <label for="nome">Name:</label> <br>
-                    <input type="text" id="nome">
+                    <input type="text" id="nome" onkeyup='validaNome()'>
+                    <div id="TxtNome"></div>
 
-                    <br><label for="E-mail">E-mail:</label> <br>
-                    <input type="email" id="E-mail">
-
-                    <br><label for="Subject">Subject:</label> <br>
-                    <input type="text" id="Subject">
+                    <br><label for="email">E-mail:</label> <br>
+                    <input type="email" id="email" onkeyup='validaEmail()'>
+                    <div id="TxtEmail"></div>
 
                     <br><label for="assunto">Text:</label> <br>
-                    <textarea name="assunto" id="assunto" cols="22" rows="5"></textarea>
+                    <textarea name="assunto" id="assunto" cols="22" rows="5" onkeyup='validaAssunto()'></textarea>
+                    <div id="TxtAssunto"></div>
+
+                    <br>
+                    <button onclick= 'enviar()'>Send</button>
 
                 </form>
+
+                <h2>Our Location</h2>
+
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="200" height="200" id="gmap" onmousemove="mapaZoomIn()" onmouseout="mapaZoomOut()"
+                            src="https://maps.google.com/maps?q=Midland,%20TX,%20EUA&t=&z=9&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                </div>
+
 
                 <div class="wrapper">
                     <img src="https://i.imgur.com/NIaWOIl.png" alt="brand of sacrifice" class="brandofsacrifice">
                 </div>
 
             </div>
+    </center>
 
 
-        </center>
+    <div>
+        <hr>
+        <footer>
+            <center>
+                <div class=".imgtocenter">
+                    <a href="https://github.com/vbersano" target="_blank"><img class="tm-social"
+                            src="https://i.imgur.com/qRGX6tS.png" alt="github logo"></a>
+                    <a href="https://www.instagram.com/vbersanoo/" target="_blank"><img class="tm-social"
+                            src="https://i.imgur.com/TGZRnxX.png" alt="instagram"></a>
+                    <a href="https://www.linkedin.com/in/vinicius-bersano/" target="_blank"><img class="tm-social"
+                            src="https://i.imgur.com/p9Vjndz.png" alt="linkedin"></a>
+                </div>
+            </center>
+            <h3>Made with ♥ by Vinicius Bersano Oliveira</h3>
+            <h3>no Copyright, for a Copyright free World!</h3>
+        </footer>
+        </hr>
+    </div>
 
-        <div class="container">
-                <hr>
-                <footer>
-                    <h3>Webpage developed for a Generation Brasil - Java Web Course assignment!</h3>
-                    <h3>Coded and Developed by Vinicius Bersano Oliveira</h3>
-                    <h3>no Copyright, for a Copyright free World!</h3>
-                </footer>
-                </hr>
-            </div>
-
-        </div>
+    <script src="assets/js/script.js"></script>
 
 </body>
 
